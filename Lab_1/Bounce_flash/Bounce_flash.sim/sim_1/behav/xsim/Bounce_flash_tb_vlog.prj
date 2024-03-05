@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Bounce_flash.srcs/sources_1/new/Bounce_flash.v" \
+"../../../../Bounce_flash.srcs/sim_1/new/bounce_flash_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
