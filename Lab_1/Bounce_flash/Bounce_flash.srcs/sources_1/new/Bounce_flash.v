@@ -24,8 +24,8 @@ module Bounce_flash(
     input clk,      
     input reset,
     input flick,
-    output reg [15:0] lamps,
-    output reg [4:0] dbg
+    output reg [15:0] lamps
+    //output reg [4:0] dbg
     );
 
 // Define states
@@ -46,13 +46,13 @@ reg [2:0] next_state;
 reg [4:0] lamp_counter; // Counter to keep track of the current lamp
 // Asynchronous reset
 always @(posedge clk or posedge reset or posedge flick) begin
-    if (reset) begin
+    if (!reset) begin
         current_state <= INIT;
         lamp_counter <= 0;
         lamps <= 16'b0;
-        dbg <= 3'b0;
+        //dbg <= 3'b0;
     end else begin
-        dbg <= 3'b0;
+        //dbg <= 3'b0;
         
          case (current_state)
             INIT: begin
@@ -60,8 +60,8 @@ always @(posedge clk or posedge reset or posedge flick) begin
                 current_state <= TURN_ON_TO_5;
             end
             TURN_ON_TO_5: begin
-            dbg <= lamp_counter;
-                if (lamp_counter < 5) begin
+            //dbg <= lamp_counter;
+                if (lamp_counter < 6) begin
                 lamp_counter<=lamp_counter+1;
                 lamps <= (1 << lamp_counter) - 1;                
                 end else begin
@@ -79,7 +79,7 @@ always @(posedge clk or posedge reset or posedge flick) begin
                 end
             end
             TURN_ON_TO_10: begin
-            dbg <=lamp_counter; 
+            //dbg <=lamp_counter; 
             if (flick && lamp_counter == 5) begin
                 flick_active <= 1;
                 end                       
@@ -111,7 +111,7 @@ always @(posedge clk or posedge reset or posedge flick) begin
                 end
             end
             TURN_ON_TO_15: begin
-            dbg <=flick_active; 
+            //dbg <=flick_active; 
             if (flick && lamp_counter == 10) begin
                 flick_active <= 1;
                 end                       
