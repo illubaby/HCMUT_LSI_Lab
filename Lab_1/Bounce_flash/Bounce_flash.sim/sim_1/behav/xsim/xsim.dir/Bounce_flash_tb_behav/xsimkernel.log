@@ -1,4 +1,4 @@
-Running: xsim.dir/Bounce_flash_tb_behav/xsimk.exe -simmode gui -wdb Bounce_flash_tb_behav.wdb -simrunnum 0 -socket 53714
+Running: xsim.dir/Bounce_flash_tb_behav/xsimk.exe -simmode gui -wdb Bounce_flash_tb_behav.wdb -simrunnum 0 -socket 63094
 Design successfully loaded
-Design Loading Memory Usage: 7944 KB (Peak: 7944 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 7956 KB (Peak: 7956 KB)
+Design Loading CPU Usage: 31 ms

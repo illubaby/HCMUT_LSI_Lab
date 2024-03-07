@@ -1,0 +1,6 @@
+cd /home/share_file/cadence/
+source add_license
+source add_path
+cd -
+xrun -access rw -licqueue -64BIT -l run.log lab1.v lab1_tb.v
+
