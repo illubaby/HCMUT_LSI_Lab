@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Mar 20 23:48:18 2024
+# Process ID: 35104
+# Current directory: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/test/test.runs/impl_1
+# Command line: vivado -log led_sequence.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source led_sequence.tcl -notrace
+# Log file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/test/test.runs/impl_1/led_sequence.vdi
+# Journal file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/test/test.runs/impl_1/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 2986.503 MHz, CPU Physical cores: 14, Host memory: 16361 MB
+#-----------------------------------------------------------
+source led_sequence.tcl -notrace
+Command: link_design -top led_sequence -part xck24-ubva530-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck24-ubva530-2LV-c
+WARNING: [Device 21-9] Clock region file  is not available
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2160.750 ; gain = 0.000 ; free physical = 3331 ; free virtual = 9532
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2160.750 ; gain = 0.000 ; free physical = 3319 ; free virtual = 9521
+CRITICAL WARNING: [Device 21-2168] Failed to load clock programmable delays in NTD flow
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2160.750 ; gain = 0.000 ; free physical = 3319 ; free virtual = 9521
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+6 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck24'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck24'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2224.781 ; gain = 63.996 ; free physical = 3320 ; free virtual = 9522
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: b1bd9672
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2224.781 ; gain = 0.000 ; free physical = 3320 ; free virtual = 9522
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 1 Warnings, 1 Critical Warnings and 1 Errors encountered.
+opt_design failed
+ERROR: [Common 17-577] Internal error: Cannot run timing on a non-timing device
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 23:48:25 2024...

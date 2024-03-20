@@ -1,42 +1,227 @@
 #-----------------------------------------------------------
-# Vivado v2023.1.1 (64-bit)
-# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
-# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
-# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Mar  7 23:07:50 2024
-# Process ID: 25352
-# Current directory: C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1
-# Command line: vivado.exe -log Bounce_flash.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bounce_flash.tcl
-# Log file: C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.vds
-# Journal file: C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1\vivado.jou
-# Running On: TUF-F15, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16781 MB
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Mar 21 01:54:18 2024
+# Process ID: 60935
+# Current directory: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1
+# Command line: vivado -log Bounce_flash.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bounce_flash.tcl
+# Log file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.vds
+# Journal file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 1867.281 MHz, CPU Physical cores: 14, Host memory: 16361 MB
 #-----------------------------------------------------------
 source Bounce_flash.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 457.293 ; gain = 159.699
-Command: read_checkpoint -auto_incremental -incremental C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/utils_1/imports/synth_1/Bounce_flash.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/utils_1/imports/synth_1/Bounce_flash.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/utils_1/imports/synth_1/Bounce_flash.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/utils_1/imports/synth_1/Bounce_flash.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top Bounce_flash -part xc7z020clg484-1
+Command: synth_design -top Bounce_flash -part xck24-ubva530-2LV-c
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+Attempting to get a license for feature 'Synthesis' and/or device 'xck24'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck24'
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8612
+INFO: [Synth 8-7075] Helper process launched with PID 60955
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 898.863 ; gain = 410.113
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1705.988 ; gain = 405.715 ; free physical = 5621 ; free virtual = 10651
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Bounce_flash' [C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v:23]
-ERROR: [Synth 8-7213] Expression condition using operand 'reset' does not match with the corresponding edges used in event control [C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v:49]
-ERROR: [Synth 8-6156] failed synthesizing module 'Bounce_flash' [C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bounce_flash' [/home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Bounce_flash' (0#1) [/home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v:23]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 989.035 ; gain = 500.285
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1780.926 ; gain = 480.652 ; free physical = 5525 ; free virtual = 10556
 ---------------------------------------------------------------------------------
-synthesize failed
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1798.738 ; gain = 498.465 ; free physical = 5525 ; free virtual = 10556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck24-ubva530-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xck24-ubva530-2LV-c
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1815.648 ; gain = 515.375 ; free physical = 5524 ; free virtual = 10555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Bounce_flash'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                              000 |                              000
+            TURN_ON_TO_5 |                              001 |                              001
+           TURN_OFF_TO_0 |                              010 |                              010
+           TURN_ON_TO_10 |                              011 |                              011
+           TURN_OFF_TO_5 |                              100 |                              100
+           TURN_ON_TO_15 |                              101 |                              101
+     TURN_OFF_TO_0_AGAIN |                              110 |                              110
+                   BLINK |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Bounce_flash'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1815.648 ; gain = 515.375 ; free physical = 5493 ; free virtual = 10537
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 5     
+	   8 Input   16 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   8 Input    5 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4715 ; free virtual = 9883
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4713 ; free virtual = 9881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4713 ; free virtual = 9881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     5|
+|4     |LUT3 |     6|
+|5     |LUT4 |    15|
+|6     |LUT5 |    18|
+|7     |LUT6 |    28|
+|8     |FDRE |    26|
+|9     |IBUF |     3|
+|10    |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   119|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.891 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2484.898 ; gain = 1184.617 ; free physical = 4720 ; free virtual = 9889
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2484.898 ; gain = 0.000 ; free physical = 5003 ; free virtual = 10172
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2540.918 ; gain = 0.000 ; free physical = 4974 ; free virtual = 10151
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+
+Synth Design complete | Checksum: 5543cc53
 INFO: [Common 17-83] Releasing license: Synthesis
-10 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 23:08:05 2024...
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2540.953 ; gain = 1252.555 ; free physical = 4974 ; free virtual = 10151
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1813.869; main = 1813.869; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2540.922; main = 2540.922; forked = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2564.930 ; gain = 0.000 ; free physical = 4974 ; free virtual = 10151
+INFO: [Common 17-1381] The checkpoint '/home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Bounce_flash_utilization_synth.rpt -pb Bounce_flash_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 01:54:32 2024...

@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.1.1 (64-bit)
-# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
-# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
-# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
-# Start of session at: Thu Mar  7 23:07:50 2024
-# Process ID: 25352
-# Current directory: C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1
-# Command line: vivado.exe -log Bounce_flash.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bounce_flash.tcl
-# Log file: C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.vds
-# Journal file: C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1\vivado.jou
-# Running On: TUF-F15, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16781 MB
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Mar 21 01:54:18 2024
+# Process ID: 60935
+# Current directory: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1
+# Command line: vivado -log Bounce_flash.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bounce_flash.tcl
+# Log file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.vds
+# Journal file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 1867.281 MHz, CPU Physical cores: 14, Host memory: 16361 MB
 #-----------------------------------------------------------
 source Bounce_flash.tcl -notrace

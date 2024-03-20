@@ -1,0 +1,41 @@
+-------------------------------------
+| Tool Version : Vivado v.2023.2
+| Date         : Thu Mar 21 01:54:59 2024
+| Host         : illubaby-ASUS-TUF-Gaming-F15
+| Design       : design_1
+| Device       : xck24-ubva530-2LV-C-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 1
+	Number of BUFGCE: 1
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 1 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+		No sub-optimality found
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: clk_IBUF_BUFG
+	Clock source type: BUFGCE
+	Clock source region: X1Y2
+	initial rect ((0, 1), (1, 2))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+

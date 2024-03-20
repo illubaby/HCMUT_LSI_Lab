@@ -37,16 +37,17 @@ parameter INIT = 3'd0,
           TURN_OFF_TO_5 = 3'd4,
           TURN_ON_TO_15 = 3'd5,
           TURN_OFF_TO_0_AGAIN = 3'd6,
-          BLINK = 3'd7;
-
+          BLINK = 3'd7,
+          BLINK_DURATION  = 1;
 // State variables
-reg [1:0] flick_active; 
+reg flick_active; // we need this as a check point. If we don't use this, we dont know if flick is on at the check point
 reg [2:0] current_state = INIT;
-reg [2:0] next_state;
-reg [4:0] lamp_counter; // Counter to keep track of the current lamp
+reg [4:0] lamp_counter;
+reg [2:0] blink_counter;
+ 
 // Asynchronous reset
-always @(posedge clk or posedge reset or posedge flick) begin
-    if (!reset) begin
+always @(posedge clk ) begin
+    if (reset==1'b0) begin
         current_state <= INIT;
         lamp_counter <= 0;
         lamps <= 16'b0;
@@ -58,6 +59,8 @@ always @(posedge clk or posedge reset or posedge flick) begin
             INIT: begin
                 lamps <= 16'b0;
                 current_state <= TURN_ON_TO_5;
+                flick_active = 1'b0;
+                blink_counter = 1'b0;
             end
             TURN_ON_TO_5: begin
             //dbg <= lamp_counter;
@@ -143,10 +146,14 @@ always @(posedge clk or posedge reset or posedge flick) begin
             end
             
             BLINK: begin
+            if (blink_counter<BLINK_DURATION) begin
                 lamps <= 16'hFFFF; // Turn all lamps ON
-                #5; // Wait for a brief moment
+                blink_counter <=blink_counter+1;
+                end else begin
                 lamps <= 16'b0; // Turn all lamps OFF
-                current_state <= INIT; 
+                blink_counter = 0;
+                current_state <= INIT;
+                end 
             end
         endcase    
                 

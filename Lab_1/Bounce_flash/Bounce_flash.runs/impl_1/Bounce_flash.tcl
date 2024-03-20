@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/impl_1/Bounce_flash.tcl"
+  variable script "/home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/impl_1/Bounce_flash.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,24 +125,26 @@ set rc [catch {
   set_param chipscope.maxJobs 5
   set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg484-1
-  set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
+  create_project -in_memory -part xck24-ubva530-2LV-c
+  set_property board_part xilinx.com:k24c:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.xpr [current_project]
-  set_property ip_output_repo C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/wt [current_project]
+  set_property parent.project_path /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.xpr [current_project]
+  set_property ip_output_repo /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.dcp
+  add_files -quiet /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.dcp
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }
+OPTRACE "read constraints: implementation_pre" START { }
+OPTRACE "read constraints: implementation_pre" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top Bounce_flash -part xc7z020clg484-1 
+  link_design -top Bounce_flash -part xck24-ubva530-2LV-c 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }

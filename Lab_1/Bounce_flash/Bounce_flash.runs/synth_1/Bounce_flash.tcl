@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.tcl"
+  variable script "/home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.runs/synth_1/Bounce_flash.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,21 +71,21 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z020clg484-1
+create_project -in_memory -part xck24-ubva530-2LV-c
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/wt [current_project]
-set_property parent.project_path C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.xpr [current_project]
+set_property webtalk.parent_dir /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/wt [current_project]
+set_property parent.project_path /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
-set_property ip_output_repo c:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/ip [current_project]
+set_property board_part xilinx.com:k24c:part0:1.0 [current_project]
+set_property ip_output_repo /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v
+read_verilog -library xil_defaultlib /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/sources_1/new/Bounce_flash.v
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -97,11 +97,11 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/utils_1/imports/synth_1/Bounce_flash.dcp
+read_checkpoint -auto_incremental -incremental /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.srcs/utils_1/imports/synth_1/Bounce_flash.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top Bounce_flash -part xc7z020clg484-1
+synth_design -top Bounce_flash -part xck24-ubva530-2LV-c
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
