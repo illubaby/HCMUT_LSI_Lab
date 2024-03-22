@@ -59,8 +59,8 @@ always @(posedge clk ) begin
             INIT: begin
                 lamps <= 16'b0;
                 current_state <= TURN_ON_TO_5;
-                flick_active = 1'b0;
-                blink_counter = 1'b0;
+                flick_active <= 1'b0;
+                blink_counter <= 1'b0;
             end
             TURN_ON_TO_5: begin
             //dbg <= lamp_counter;
@@ -151,7 +151,7 @@ always @(posedge clk ) begin
                 blink_counter <=blink_counter+1;
                 end else begin
                 lamps <= 16'b0; // Turn all lamps OFF
-                blink_counter = 0;
+                blink_counter <= 0;
                 current_state <= INIT;
                 end 
             end
