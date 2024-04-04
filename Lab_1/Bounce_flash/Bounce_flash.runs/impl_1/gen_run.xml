@@ -1,89 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xck24-ubva530-2LV-c" LaunchTime="1710960857">
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Bounce_flash_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS" Name="Bounce_flash_routed.rqs"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="Bounce_flash.vdi"/>
-  <File Type="BG-DRC" Name="Bounce_flash.drc"/>
-  <File Type="BG-BGN" Name="Bounce_flash.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="Bounce_flash.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Bounce_flash.ltx"/>
-  <File Type="RBD_FILE" Name="Bounce_flash.rbd"/>
-  <File Type="NPI_FILE" Name="Bounce_flash.npi"/>
-  <File Type="RNPI_FILE" Name="Bounce_flash.rnpi"/>
-  <File Type="CFI_FILE" Name="Bounce_flash.cfi"/>
-  <File Type="RCFI_FILE" Name="Bounce_flash.rcfi"/>
-  <File Type="PL-PDI-FILE" Name="Bounce_flash_pld.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="Bounce_flash_boot.pdi"/>
-  <File Type="PDI-FILE" Name="Bounce_flash.pdi"/>
-  <File Type="BITSTR-MMI" Name="Bounce_flash.mmi"/>
-  <File Type="BITSTR-BMM" Name="Bounce_flash_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Bounce_flash.nky"/>
-  <File Type="BITSTR-RBT" Name="Bounce_flash.rbt"/>
-  <File Type="BITSTR-MSK" Name="Bounce_flash.msk"/>
-  <File Type="BG-BIN" Name="Bounce_flash.bin"/>
-  <File Type="BG-BIT" Name="Bounce_flash.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Bounce_flash_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Bounce_flash_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Bounce_flash_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Bounce_flash_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Bounce_flash_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Bounce_flash_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Bounce_flash_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Bounce_flash_postroute_physopt.dcp"/>
-  <File Type="ROUTE-RQS-PB" Name="Bounce_flash_rqs_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Bounce_flash_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Bounce_flash_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Bounce_flash_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Bounce_flash_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="Bounce_flash_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Bounce_flash_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="Bounce_flash_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Bounce_flash_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Bounce_flash_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Bounce_flash_routed.dcp"/>
   <File Type="ROUTE-STATUS" Name="Bounce_flash_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="Bounce_flash_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="Bounce_flash_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR" Name="Bounce_flash_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Bounce_flash_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Bounce_flash_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Bounce_flash_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="Bounce_flash_drc_routed.rpx"/>
   <File Type="ROUTE-DRC-PB" Name="Bounce_flash_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="Bounce_flash_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Bounce_flash_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="Bounce_flash_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Bounce_flash_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="Bounce_flash_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="Bounce_flash_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Bounce_flash_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Bounce_flash_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Bounce_flash_postplace_pwropt.dcp"/>
-  <File Type="PLACE-RQA-PB" Name="Bounce_flash_rqa_placed.pb"/>
-  <File Type="PLACE-TIMING" Name="Bounce_flash_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Bounce_flash_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Bounce_flash_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="Bounce_flash_control_sets_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Bounce_flash_utilization_placed.pb"/>
   <File Type="PLACE-UTIL" Name="Bounce_flash_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Bounce_flash_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="Bounce_flash_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="Bounce_flash_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="Bounce_flash_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="Bounce_flash_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Bounce_flash_pwropt.dcp"/>
-  <File Type="OPT-RQA-PB" Name="Bounce_flash_rqa_opted.pb"/>
-  <File Type="OPT-TIMING" Name="Bounce_flash_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Bounce_flash.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Bounce_flash_methodology_drc_opted.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Bounce_flash_route_status.pb"/>
+  <File Type="BG-BIT" Name="Bounce_flash.bit"/>
+  <File Type="PDI-FILE" Name="Bounce_flash.pdi"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Bounce_flash_routed_bb.dcp"/>
+  <File Type="BG-BGN" Name="Bounce_flash.bgn"/>
+  <File Type="RCFI_FILE" Name="Bounce_flash.rcfi"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Bounce_flash_routed_error.dcp"/>
+  <File Type="BG-DRC" Name="Bounce_flash.drc"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Bounce_flash_timing_summary_routed.rpt"/>
+  <File Type="BG-BIN" Name="Bounce_flash.bin"/>
+  <File Type="CFI_FILE" Name="Bounce_flash.cfi"/>
   <File Type="OPT-DRC" Name="Bounce_flash_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Bounce_flash_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="Bounce_flash_timing_summary_init.rpt"/>
-  <File Type="REPORTS-TCL" Name="Bounce_flash_reports.tcl"/>
+  <File Type="RDI-RDI" Name="Bounce_flash.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Bounce_flash_timing_summary_postroute_physopted.pb"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Bounce_flash_postroute_physopted.rqs"/>
+  <File Type="ROUTE-TIMING-PB" Name="Bounce_flash_timing_summary_routed.pb"/>
   <File Type="PA-TCL" Name="Bounce_flash.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Bounce_flash_bus_skew_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="Bounce_flash.msk"/>
+  <File Type="RNPI_FILE" Name="Bounce_flash.rnpi"/>
+  <File Type="OPT-HWDEF" Name="Bounce_flash.hwdef"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Bounce_flash_timing_summary_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="Bounce_flash_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Bounce_flash_bus_skew_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="Bounce_flash.rbt"/>
+  <File Type="NPI_FILE" Name="Bounce_flash.npi"/>
+  <File Type="BITSTR-NKY" Name="Bounce_flash.nky"/>
+  <File Type="RBD_FILE" Name="Bounce_flash.rbd"/>
+  <File Type="BITSTR-BMM" Name="Bounce_flash_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Bounce_flash.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Bounce_flash.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Bounce_flash.ltx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Bounce_flash_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Bounce_flash_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Bounce_flash_bus_skew_routed.rpt"/>
+  <File Type="OPT-DCP" Name="Bounce_flash_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Bounce_flash_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Bounce_flash_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Bounce_flash_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Bounce_flash_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Bounce_flash_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Bounce_flash_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Bounce_flash_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Bounce_flash_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Bounce_flash_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Bounce_flash_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Bounce_flash_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Bounce_flash_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Bounce_flash_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Bounce_flash_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Bounce_flash_methodology_drc_routed.rpx"/>
+  <File Type="BOOT-PDI-FILE" Name="Bounce_flash_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Bounce_flash_pld.pdi"/>
+  <File Type="ROUTE-RQS" Name="Bounce_flash_routed.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Bounce_flash.v">
@@ -132,5 +118,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

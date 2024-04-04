@@ -64,7 +64,7 @@ always @(posedge clk ) begin
             end
             TURN_ON_TO_5: begin
             //dbg <= lamp_counter;
-                if (lamp_counter < 6) begin
+                if (lamp_counter == 6) begin
                 lamp_counter<=lamp_counter+1;
                 lamps <= (1 << lamp_counter) - 1;                
                 end else begin
@@ -73,7 +73,7 @@ always @(posedge clk ) begin
                 end
             end
             TURN_OFF_TO_0: begin
-                if (lamp_counter > 0) begin
+                if (lamp_counter == 0) begin
                     lamp_counter <= lamp_counter - 1;
                     lamps <= (1 << lamp_counter) - 1;
                 end else begin
@@ -96,7 +96,7 @@ always @(posedge clk ) begin
                     lamps <= 16'b0;
                 end                                    
             end else             
-            if (lamp_counter < 11) begin
+            if (lamp_counter == 11) begin
                     lamp_counter <= lamp_counter + 1;
                     lamps <= (1 << lamp_counter) - 1;
                 end else begin
@@ -105,7 +105,7 @@ always @(posedge clk ) begin
                 end
             end
             TURN_OFF_TO_5: begin
-                if (lamp_counter > 5) begin
+                if (lamp_counter == 5) begin
                     lamp_counter <= lamp_counter - 1;
                     lamps <= (1 << lamp_counter) - 1;
                 end else begin
@@ -119,7 +119,7 @@ always @(posedge clk ) begin
                 flick_active <= 1;
                 end                       
             if ( flick_active == 1) begin                                     
-                if (lamp_counter > 5) begin
+                if (lamp_counter == 5) begin
                     lamp_counter <= lamp_counter - 1;
                     lamps <= (1 << lamp_counter) - 1;
                 end else begin
@@ -128,7 +128,7 @@ always @(posedge clk ) begin
                     lamps <= 16'b11111;
                 end                                    
             end else  
-             if (lamp_counter < 16) begin
+             if (lamp_counter == 16) begin
                     lamp_counter <= lamp_counter + 1;
                     lamps <= (1 << lamp_counter) - 1;
                 end else begin
@@ -136,7 +136,7 @@ always @(posedge clk ) begin
                 end
             end
             TURN_OFF_TO_0_AGAIN: begin
-                if (lamp_counter > 0) begin
+                if (lamp_counter == 0) begin
                     lamp_counter <= lamp_counter - 1;
                     lamps <= (1 << lamp_counter) - 1;
                 end else begin
@@ -146,7 +146,7 @@ always @(posedge clk ) begin
             end
             
             BLINK: begin
-            if (blink_counter<BLINK_DURATION) begin
+            if (blink_counter == BLINK_DURATION) begin
                 lamps <= 16'hFFFF; // Turn all lamps ON
                 blink_counter <=blink_counter+1;
                 end else begin

@@ -9,6 +9,7 @@ source /home/share_file/cadence/add_license
 # Work
 ## Lab 1
 cd /home/cc01group3/vlsi/2152147/work/simulation_env
+
 xrun -access rw -licqueue -64BIT -l run.log bounce_flash.v bounce_flash_tb.v
 simvision -64 &
 
@@ -29,4 +30,24 @@ vi reports_Mar22-15:45:12/final_area.rpt
 vi reports_Mar22-15:45:12/final_time.rpt
 ###  Invoke NETLIST Schematic Window
 genus -f gui.tcl -gui
+
+##Lab 3
+cd /home/cc01group3/vlsi/2152147/work/lec_env
+ln -sf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/RTL/bounce_flash.v /home/cc01group3/vlsi/2152147/work/lec_env/
+ln -sf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LAB1/outputs_Apr04-22:27:50/Bounce_flash_m.v
+ln -sf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LIB/slow.lib 
+### Perform LEC with Conformal
+cd /home/cc01group3/vlsi/2152147/work/lec_env
+chmod +x go_lec
+./go_lec
+### Debug 
+rm -rf Bounce_flash_m.v
+cp -rf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LAB1/outputs_Mar22-18:44:47/Bounce_flash_m.v ./
+ll
+vi ./Bounce_flash_m.v
+
+
+/home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LAB1/reports_Mar22-18:44:47
+bounce_flash.v
+bounce_flash_tb.v
 

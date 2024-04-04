@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xck24-ubva530-2LV-c" LaunchTime="1710960857" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Bounce_flash.dcp">
-  <File Type="VDS-TIMING-PB" Name="Bounce_flash_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Bounce_flash_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="Bounce_flash.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="Bounce_flash_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="Bounce_flash_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="Bounce_flash_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Bounce_flash.vds"/>
   <File Type="REPORTS-TCL" Name="Bounce_flash_reports.tcl"/>
   <File Type="PA-TCL" Name="Bounce_flash.tcl"/>
+  <File Type="RDS-DCP" Name="Bounce_flash.dcp"/>
+  <File Type="RDS-UTIL" Name="Bounce_flash_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Bounce_flash_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Bounce_flash.v">

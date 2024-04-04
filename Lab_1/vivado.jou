@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr  4 10:33:09 2024
+# Process ID: 10976
+# Current directory: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1
+# Command line: vivado
+# Log file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/vivado.log
+# Journal file: /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 14, Host memory: 16361 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/illubaby/Github/HCMUT_LSI_Lab/Lab_1/Bounce_flash/Bounce_flash.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Bounce_flash_tb.tcl
