@@ -30,6 +30,7 @@ vi reports_Mar22-15:45:12/final_area.rpt
 vi reports_Mar22-15:45:12/final_time.rpt
 ###  Invoke NETLIST Schematic Window
 genus -f gui.tcl -gui
+<<<<<<< Updated upstream
 
 ##Lab 3
 cd /home/cc01group3/vlsi/2152147/work/lec_env
@@ -51,3 +52,6 @@ vi ./Bounce_flash_m.v
 bounce_flash.v
 bounce_flash_tb.v
 
+=======
+vi reports_Mar22-18:02:54/final_qor.rpt
+>>>>>>> Stashed changes
