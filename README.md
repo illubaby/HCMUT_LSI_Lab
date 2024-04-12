@@ -32,7 +32,7 @@ vi reports_Mar22-15:45:12/final_time.rpt
 genus -f gui.tcl -gui
 <<<<<<< Updated upstream
 
-##Lab 3
+## Lab 3
 cd /home/cc01group3/vlsi/2152147/work/lec_env
 ln -sf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/RTL/bounce_flash.v /home/cc01group3/vlsi/2152147/work/lec_env/
 ln -sf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LAB1/outputs_Apr04-22:27:50/Bounce_flash_m.v
@@ -46,12 +46,22 @@ rm -rf Bounce_flash_m.v
 cp -rf /home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LAB1/outputs_Mar22-18:44:47/Bounce_flash_m.v ./
 ll
 vi ./Bounce_flash_m.v
+## Lab4
+cd /home/cc01group3/vlsi/2152147/work/layout_env
+### 1
+cd pdk/gpdk045_v_6_0/
+cd /home/share_file/cadence/
+source add_path
+source add_license
+cd -
+virtuoso &
+### 2
+chmod +x go_vir
+source go_vir
 
 
-/home/cc01group3/vlsi/2152147/work/synthesis_env/Genus_BoundFlasher/LAB1/reports_Mar22-18:44:47
+
+
 bounce_flash.v
 bounce_flash_tb.v
 
-=======
-vi reports_Mar22-18:02:54/final_qor.rpt
->>>>>>> Stashed changes

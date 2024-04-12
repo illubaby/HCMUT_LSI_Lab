@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Time =                    0, Control = 0000, A =   0, B =   0, Result =   0, ZERO = 1
+Time =                10000, Control = 0010, A =  10, B =  15, Result =  25, ZERO = 0
+Time =                20000, Control = 0110, A =  25, B =  10, Result =  15, ZERO = 0
+Time =                30000, Control = 0000, A = 170, B = 204, Result = 136, ZERO = 0
+Time =                40000, Control = 0001, A = 170, B =  85, Result = 255, ZERO = 0
+$finish called at time : 50 ns : File "C:/Users/ADMIN/OneDrive/GitHub/HCMUT_LSI_Lab/ALU/ALU/ALU.srcs/sim_1/new/alu_tb.v" Line 39
